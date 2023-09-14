@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=WorkSans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+html {
+  background-color: #ecdbc6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
+}
+
+p,
+li {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+section {
+  display: flex;
+}
+
+.card {
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #f5dfc3;
+}
+
+.card div {
+  margin: 20px;
+}
