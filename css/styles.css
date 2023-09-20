@@ -1,19 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=WorkSans");
-@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:wght@900&");
 
 html {
   background-color: #ecdbc6;
+}
+
+body {
+  /* center all content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Work Sans", sans-serif;
+  color: #171717;
 }
 
 p,
 li {
   font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: #404040;
+}
+
+li strong {
+  font-weight: 900;
+  color: #171717;
+}
+
+.recipe-card-row .card li {
+  padding: 5px 0px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 h1 {
@@ -25,7 +53,7 @@ h1 {
 h2 {
   font-size: 30px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -34,12 +62,42 @@ section {
 }
 
 .card {
+  padding: 20px;
   margin: 20px;
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #f5dfc3;
+  width: 500px;
 }
 
-.card div {
-  margin: 20px;
+.card-img {
+  padding: 0px;
+  object-fit: cover;
+}
+
+.recipe-card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  max-width: 1000px;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 925px;
+}
+
+.instructions p {
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.instructions h4 {
+  margin-bottom: 10px;
+  padding: 0px;
 }
